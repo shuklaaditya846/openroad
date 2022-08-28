@@ -31,6 +31,8 @@ Perspective Transformation which warpes the image into a bird's eye view scene; 
 2. Then, the undistorted image is warped by passing it into cv2.warpPerspective along with the transformation matrix.
 3. Finally, we cut/crop out the sides of the image using a utility function get_roi() since that portion of the image contains no relevant information.
 
+![output](https://user-images.githubusercontent.com/23453334/187064717-fcf7e7e9-da19-403d-9fa5-317c1ce7eccb.png)
+
 
 ## Generating a thresholded binary image
 The surface on both sides of the lane lines has different brightness and/or saturation and a different hue than the line itself, and, Lane lines are not necessarily contiguous, so the algorithm needs to be able to identify individual line segments as belonging to the same lane line.
@@ -46,7 +48,7 @@ Logically, this can explained as:
 <img width="360" alt="image2_ (2)" src="https://user-images.githubusercontent.com/23453334/187064352-a56d982e-fa19-4b84-98cb-3a81f5c2a32b.png">
 
 
-[Google Colab Notebook](https://colab.research.google.com/drive/1ed85zVZwgemhxHf-DPHbek4qkkj-TJCP?usp=sharing)
+[Google Colab Notebook](https://colab.research.google.com/drive/17RouOvVKGtgfKdpZVbykMLdypiAayihU?usp=sharing)
 
 <hr>
 
